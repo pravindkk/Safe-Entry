@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="63" id="KGk-i7-Jjw" customClass="SignedInViewCell" customModule="QRCodeReader" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="357" height="63"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="357" height="63"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M7t-hj-ETC">
+                        <rect key="frame" x="261" y="17.5" width="76" height="28"/>
+                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="Check Out">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <connections>
+                            <action selector="watchNowTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="VmB-1X-381"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v0E-BX-g64">
+                        <rect key="frame" x="20" y="23" width="211" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="M7t-hj-ETC" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="4Ce-Rd-ZjQ"/>
+                    <constraint firstItem="v0E-BX-g64" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="6Uj-ZG-Tlh"/>
+                    <constraint firstAttribute="trailing" secondItem="M7t-hj-ETC" secondAttribute="trailing" constant="20" id="AHC-rV-wjW"/>
+                    <constraint firstItem="v0E-BX-g64" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Fjy-Dx-rRX"/>
+                    <constraint firstItem="v0E-BX-g64" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" symbolic="YES" id="IOG-ed-Pkt"/>
+                    <constraint firstItem="M7t-hj-ETC" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Iem-QA-8kN"/>
+                    <constraint firstAttribute="trailing" secondItem="M7t-hj-ETC" secondAttribute="trailing" constant="20" id="Phm-Uo-xWH"/>
+                    <constraint firstAttribute="trailing" secondItem="v0E-BX-g64" secondAttribute="trailing" constant="126" id="XOC-CU-9R8"/>
+                    <constraint firstItem="M7t-hj-ETC" firstAttribute="leading" secondItem="v0E-BX-g64" secondAttribute="trailing" constant="30" id="lyz-vg-2hA"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="signedInTitle" destination="v0E-BX-g64" id="cio-aw-5BW"/>
+            </connections>
+            <point key="canvasLocation" x="163.04347826086959" y="132.92410714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
